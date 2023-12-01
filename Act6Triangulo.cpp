@@ -13,7 +13,7 @@ void readTriangleArray(Triangle arrTriangles[], int size) {
     double x1, y1, x2, y2, x3, y3;
 
     for (int index = 0; index < size; index++) {
-        cout << "Enter the 3 x, y coordinates for the vertices of triangle " << index << ":";
+        cout << "Ingresa las 3 coordenadas x, y de los vertices del triangulo 1: " << index << ":";
         cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
 
         Point point1{ x1, y1 };
@@ -28,7 +28,7 @@ void readTriangleArray(Triangle arrTriangles[], int size) {
 
 void calculatePerimeterArea(Triangle arrTriangles[], int size) {
     for (int index = 0; index < size; index++) {
-        cout << "Triangle " << index << ".\nPerimeter = " <<
+        cout << "Triangulo " << index << ".\nPerimetro = " <<
             arrTriangles[index].perimeter() <<
             "\nArea = " <<
             arrTriangles[index].area() << endl;
